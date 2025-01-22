@@ -1,16 +1,4 @@
-import test from "../test.mjs";
-
-
-function calculateTotalPrice(cart, taxRate) {
-    let total = 0;
-    for (let i = 0; i < cart.length; i++) {
-      let item = cart[i];
-      total = total + item.price * item.quantity;
-    }
-    total = total + total * taxRate;
-    return total;
-  }
-  
+import test from "../test.mjs";  
 
   function calculateTotalPriceDeez(cart, taxRate) {
     const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
